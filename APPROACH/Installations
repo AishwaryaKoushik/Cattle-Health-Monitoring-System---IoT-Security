@@ -1,1 +1,20 @@
+In the most superficial sense, the attack can be comprehended as just another system in the network of systems. This system connects to the network subnet and floods the target device with desired packets. 
+Flooding is achieved by installing hping tool and executing hping commands. 
+The target is flushed with TCP, UDP and ICMP packets. This is achieved using hping.
+Hping is an open-source command-line tool used for crafting and analyzing packets across the TCP/IP protocol. 
 
+INSTALLATION GUIDE:
+
+To install hping, the following steps are performed - 
+
+1. Update package indexes from repositories
+
+      sudo apt update
+
+2. Upgrade any existing packages
+
+      sudo apt upgrade
+
+3. Install hping3
+
+      sudo apt-get install hping3
