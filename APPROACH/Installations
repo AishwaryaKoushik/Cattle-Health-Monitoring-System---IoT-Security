@@ -1,5 +1,4 @@
-In the most superficial sense, the attack can be comprehended as just another system in the network of systems. This system connects to the network subnet and floods the target device with desired packets. 
-Flooding is achieved by installing hping tool and executing hping commands. 
+
 The target is flushed with TCP, UDP and ICMP packets. This is achieved using hping.
 Hping is an open-source command-line tool used for crafting and analyzing packets across the TCP/IP protocol. 
 
